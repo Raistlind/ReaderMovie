@@ -1,3 +1,9 @@
-<view>
-  <text>hello</text>
+<!--wxml是小程序骨架文件，用来描述界面的结构-->
+<!--<view>等同于<div>，提供元素容器和分隔区域-->
+<view class='container'>
+  <image class='user-avatar' src="/images/02915_crossingthegap_2880x1800.jpg"></image>
+  <text class='user-name'><text style='color:red'>Hello</text>, Raistlin</text>
+  <view class='moto-container'>
+    <text class='moto'>开启小程序之旅</text>
+  </view>
 </view>
