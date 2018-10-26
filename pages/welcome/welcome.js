@@ -1,10 +1,13 @@
 Page({
-  onTap:function(){
+  onTap:function(event){
     // wx.navigateTo({
     //   url: '../posts/post',
     // });
+    
     wx.redirectTo({
       url: '../posts/post',
     })
-  }
+  },
+
+
 })
