@@ -31,8 +31,8 @@ Page({
   },
 
   onCollectionTap: function(event) {
-    // this.getPostsCollectedSyc();
-    this.getPostsCollectedAsy();
+    this.getPostsCollectedSyc();
+    // this.getPostsCollectedAsy();
   },
 
   getPostsCollectedAsy: function() {
