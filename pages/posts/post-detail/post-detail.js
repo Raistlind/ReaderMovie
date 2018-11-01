@@ -31,16 +31,32 @@ Page({
   },
 
   onCollectionTap: function(event) {
+    // this.getPostsCollectedSyc();
+    this.getPostsCollectedAsy();
+  },
+
+  getPostsCollectedAsy: function() {
+    var that = this;
+    wx.getStorage({
+      key: 'posts_collected',
+      success: function(res) {
+        var postsCollected = res.data;
+        var postCollected = postsCollected[that.data.currentPostId];
+        postCollected = !postCollected;
+        postsCollected[that.data.currentPostId] = postCollected;
+        that.showToast(postsCollected, postCollected);
+      },
+    })
+  },
+
+  getPostsCollectedSyc: function() {
     var postsCollected = wx.getStorageSync('posts_collected');
     var postCollected = postsCollected[this.data.postId];
     postCollected = !postCollected;
-    // console.log(postCollected);
     postsCollected[this.data.postId] = postCollected;
-
     this.showToast(postsCollected, postCollected);
-
-    // console.log(this.data.collected);
   },
+
 
   showModal: function(postsCollected, postCollected) {
     var that = this;
