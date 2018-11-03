@@ -32,6 +32,20 @@ Page({
         collected: false
       })
     }
+
+    var that = this;
+    wx.onBackgroundAudioPlay(function() {
+      that.setData({
+        isPlayingMusic: true
+      })
+    });
+
+    wx.onBackgroundAudioPause(function() {
+      that.setData({
+        isPlayingMusic: false
+      })
+    });
+
   },
 
   onCollectionTap: function(event) {
@@ -116,7 +130,7 @@ Page({
   },
 
   onMusicTap: function(event) {
-    var currentPostId = this .data.postId;
+    var currentPostId = this.data.postId;
     var postData = postsData.postList[currentPostId];
     var isPlayingMusic = this.data.isPlayingMusic;
     // console.log(postData);
