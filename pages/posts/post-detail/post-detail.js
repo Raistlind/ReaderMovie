@@ -1,6 +1,10 @@
 var postsData = require("../../../data/posts-data.js")
 
 Page({
+  data: {
+    isPlayingMusic: false
+  },
+
   onLoad: function(option) {
     var postId = option.id;
     // console.log(postId);
@@ -109,6 +113,34 @@ Page({
         })
       }
     });
+  },
+
+  onMusicTap: function(event) {
+    var currentPostId = this .data.postId;
+    var postData = postsData.postList[currentPostId];
+    var isPlayingMusic = this.data.isPlayingMusic;
+    // console.log(postData);
+    // console.log(postData.music);
+    if (isPlayingMusic) {
+      wx.pauseBackgroundAudio();
+      this.setData({
+        "isPlayingMusic": false
+      });
+
+    } else {
+      wx.playBackgroundAudio({
+        dataUrl: postData.music.dataUrl,
+        title: postData.music.title,
+        coverImgUrl: postData.music.coverImg
+      });
+
+      this.setData({
+        "isPlayingMusic": true
+      });
+    }
+
+
+
   }
 
 })
