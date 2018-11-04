@@ -32,9 +32,9 @@ var local_database = [
     avatar: "/images/avatar/1.png",
     postId: 1,
     music: {
-      url: "http://www.ytmp3.cn/down/54500.mp3",
+      dataUrl: "http://www.ytmp3.cn/down/54500.mp3",
       title: "夜之光-花姐",
-      coverImg: "http://oeff2vktt.bkt.clouddn.com/image/15.jpg"
+      coverImgUrl: "http://oeff2vktt.bkt.clouddn.com/image/15.jpg"
     }
   },
   {
@@ -52,9 +52,9 @@ var local_database = [
     avatar: "/images/avatar/3.png",
     postId: 2,
     music: {
-      url: "http://www.ytmp3.cn/down/54499.mp3",
+      dataUrl: "http://www.ytmp3.cn/down/54499.mp3",
       title: "来自天堂的魔鬼-厉害了我的王",
-      coverImg: "http://oeff2vktt.bkt.clouddn.com/image/35.jpg"
+      coverImgUrl: "http://oeff2vktt.bkt.clouddn.com/image/35.jpg"
     }
   },
   {
@@ -71,9 +71,9 @@ var local_database = [
     avatar: "/images/avatar/5.png",
     postId: 3,
     music: {
-      url: "http://www.ytmp3.cn/down/54498.mp3",
+      dataUrl: "http://www.ytmp3.cn/down/54498.mp3",
       title: "再回首-姜育恒",
-      coverImg: "http://oeff2vktt.bkt.clouddn.com/image/91.jpg",
+      coverImgUrl: "http://oeff2vktt.bkt.clouddn.com/image/91.jpg",
     }
   },
   {
@@ -90,9 +90,9 @@ var local_database = [
     avatar: "../../../images/avatar/3.png",
     postId: 4,
     music: {
-      url: "http://oeff2vktt.bkt.clouddn.com/image/91.jpg",
+      dataUrl: "http://oeff2vktt.bkt.clouddn.com/image/91.jpg",
       title: "SAKURA ドロップス-宇多田光",
-      coverImg: "http://oeff2vktt.bkt.clouddn.com/image/96.jpg"
+      coverImgUrl: "http://oeff2vktt.bkt.clouddn.com/image/96.jpg"
     }
   },
   {
@@ -109,9 +109,9 @@ var local_database = [
     avatar: "../../../images/avatar/5.png",
     postId: 5,
     music: {
-      url: "http://www.ytmp3.cn/down/54496.mp3",
+      dataUrl: "http://www.ytmp3.cn/down/54496.mp3",
       title: "You Are Not Alone-Michael Jackson",
-      coverImg: "http://oeff2vktt.bkt.clouddn.com/image/15.jpg"
+      coverImgUrl: "http://oeff2vktt.bkt.clouddn.com/image/15.jpg"
     }
   },
 ]

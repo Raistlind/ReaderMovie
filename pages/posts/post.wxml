@@ -1,14 +1,14 @@
 <import src="post-item/post-item-template.wxml" />
 <view>
-  <swiper indicator-dots='true' autoplay='true' interval='5000'>
+  <swiper catchtap='onSwiperTap' indicator-dots='true' autoplay='true' interval='5000'>
     <swiper-item>
-      <image src='/images/02808_ladamedefer_2880x1800.jpg'></image>
+      <image src='/images/02808_ladamedefer_2880x1800.jpg' data-postId="1"></image>
     </swiper-item>
     <swiper-item>
-      <image src='/images/02811_rightbeforewinter_2880x1800.jpg'></image>
+      <image src='/images/02811_rightbeforewinter_2880x1800.jpg' data-postId="2"></image>
     </swiper-item>
     <swiper-item>
-      <image src='/images/03066_napali_2880x1800.jpg'></image>
+      <image src='/images/03066_napali_2880x1800.jpg' data-postId="3"></image>
     </swiper-item>
   </swiper>
 
