@@ -1,4 +1,5 @@
 text{
   font-family: Ping Hei;
   font-size: 24rpx;
+  color: #666;
 }
