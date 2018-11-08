@@ -20,7 +20,7 @@ Page({
     this.getMovieListData(inTheatersUrl);
     this.getMovieListData(comingSoonUrl);
     this.getMovieListData(top250Url);
-
+//
   },
 
   getMovieListData: function(url) {
